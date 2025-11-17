@@ -1,0 +1,64 @@
+@include treelist-ui(
+    $ui: 'nav',
+    $background-color: #ffffff,
+    $padding: 12px 12px,
+    $toolstrip-background-color: #ffffff,
+    $tool-float-indicator-color: #4f46e5,
+    $tool-float-indicator-width: 4px,
+    $tool-selected-color: #4f46e5,
+    $row-indicator-width: 4px,
+    $row-indicator-selected-color: #4f46e5,
+    $row-indicator-selected-over-color: #4338ca,
+    $row-indicator-over-color: #ec4899,
+    $item-icon-width: 20px,
+    $item-text-icon-gap: 12px,
+    $item-expander-width: 20px,
+    $item-icon-font-size: 18px,
+    $item-text-font-size: 14px,
+    $item-expander-font-size: 18px,
+    $item-line-height: 36px,
+    $item-text-overflow: ellipsis,
+    $item-icon-color: #6b7280,
+    $item-text-color: #1e293b,
+    $item-text-over-color: #ec4899,
+    $item-expander-color: #6b7280,
+    $item-icon-over-color: #ec4899,
+    $item-expander-over-color: #ec4899,
+    $item-expanded-child-background-color: #f8fafc,
+    $item-expanded-background-color: transparent,
+    $row-over-background-color: #e0e7ff,
+    $row-selected-background-color: #c7d2fe
+);
+
+.navview {
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #1e293b;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navview-collapsed {
+    width: 64px; /* Removed !important */
+    background: #f8fafc;
+}
+
+.navview-collapsed .x-treelist-item-text {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.navview-collapsed .x-treelist-item-icon {
+    margin-right: 0; /* Removed !important */
+    margin-left: 4px;
+    transform: scale(1.2);
+    color: #ec4899;
+}
+
+.navview-collapsed .x-treelist-item {
+    justify-content: center;
+}
