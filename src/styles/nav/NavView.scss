@@ -1,0 +1,103 @@
+.navview {
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #1e293b;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navview-collapsed {
+    width: 64px; /* Removed !important */
+    background: #f8fafc;
+}
+
+.navview-collapsed .x-treelist-item-text {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.navview-collapsed .x-treelist-item-icon {
+    margin-right: 0; /* Removed !important */
+    margin-left: 4px;
+    transform: scale(1.2);
+    color: #ec4899;
+}
+
+.navview-collapsed .x-treelist-item {
+    justify-content: center;
+}
+
+.x-treelist {
+    padding: 12px 0;
+    background: transparent;
+}
+
+.x-treelist-group-header {
+    font-size: 11px;
+    font-weight: 600;
+    color: #6b7280;
+    padding: 10px 20px 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.x-treelist-item {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 3px 10px;
+    padding: 12px 16px;
+    cursor: pointer;
+    background: transparent; /* Removed !important */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.x-treelist-row {
+    background: transparent; /* Removed !important */
+    transition: none; /* Remove any transition that might cause background flicker */
+}
+
+.x-treelist-item-icon {
+    font-size: 18px;
+    color: #3b82f6;
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.x-treelist-item-text {
+    font-weight: 500;
+    color: #1e293b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.x-treelist-item:hover,
+.x-treelist-row:hover,
+.x-treelist-item:hover .x-treelist-item-icon,
+.x-treelist-item:hover .x-treelist-item-text {
+    background: transparent; /* Removed !important */
+    color: #ec4899;
+    transform: scale(1.05);
+}
+
+.x-treelist-item.x-treelist-item-selected,
+.x-treelist-row.x-treelist-item-selected {
+    background: transparent; /* Removed !important */
+    // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Correct comment syntax */
+}
+
+.x-treelist-item.x-treelist-item-selected .x-treelist-item-icon,
+.x-treelist-item.x-treelist-item-selected .x-treelist-item-text {
+    color: #3b82f6;
+    font-weight: 600;
+}
