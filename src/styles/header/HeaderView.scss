@@ -1,0 +1,65 @@
+.headerview.x-toolbar {
+    background-color: #0a2750;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+}
+
+.headerview.x-toolbar .headerviewtext {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+}
+
+.headerview-logo {
+    object-fit: contain;
+    max-height: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.headerview-icons {
+    gap: 12px;
+}
+
+.headerview .x-btn.headerbutton {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    color: #ffffff;
+}
+
+.headerview .x-btn.headerbutton:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+.headerview .x-fa {
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.headerview .x-btn.headerbutton:hover .x-fa {
+    color: #ec4899;
+    transform: scale(1.1);
+}
+
+.headerview .x-btn.headerbutton[text="Login/Sign Up"] {
+    background: #2563eb;
+    color: #ffffff;
+    padding: 8px 16px;
+}
+
+.headerview .x-btn.headerbutton[text="Login/Sign Up"]:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
