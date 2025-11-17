@@ -1,0 +1,53 @@
+{
+  "id": "root",
+  "name": "my-react-app",
+  "type": "folder",
+  "children": [
+    {
+      "id": "public",
+      "name": "public",
+      "type": "folder",
+      "children": [
+        { "id": "favicon.ico", "name": "favicon.ico", "type": "file" },
+        { "id": "index.html", "name": "index.html", "type": "file" },
+        { "id": "logo192.png", "name": "logo192.png", "type": "file" },
+        { "id": "logo512.png", "name": "logo512.png", "type": "file" },
+        { "id": "manifest.json", "name": "manifest.json", "type": "file" },
+        { "id": "robots.txt", "name": "robots.txt", "type": "file" }
+      ]
+    },
+    {
+      "id": "src",
+      "name": "src",
+      "type": "folder",
+      "children": [
+        { "id": "App.css", "name": "App.css", "type": "file" },
+        { "id": "App.js", "name": "App.js", "type": "file" },
+        { "id": "App.test.js", "name": "App.test.js", "type": "file" },
+        {
+          "id": "components",
+          "name": "components",
+          "type": "folder",
+          "children": [
+            { "id": "common", "name": "common", "type": "folder", "children": [] },
+            { "id": "pages", "name": "pages", "type": "folder", "children": [] }
+          ]
+        },
+        { "id": "hooks", "name": "hooks", "type": "folder", "children": [] },
+        { "id": "index.css", "name": "index.css", "type": "file" },
+        { "id": "index.js", "name": "index.js", "type": "file" },
+        { "id": "logo.svg", "name": "logo.svg", "type": "file" },
+        { "id": "reportWebVitals.js", "name": "reportWebVitals.js", "type": "file" },
+        { "id": "services", "name": "services", "type": "folder", "children": [] },
+        { "id": "setupTests.js", "name": "setupTests.js", "type": "file" },
+        { "id": "utils", "name": "utils", "type": "folder", "children": [] }
+      ]
+    },
+    { "id": ".gitignore", "name": ".gitignore", "type": "file" },
+    { "id": "README.md", "name": "README.md", "type": "file" },
+    { "id": "package-lock.json", "name": "package-lock.json", "type": "file" },
+    { "id": "package.json", "name": "package.json", "type": "file" },
+    { "id": "structure.json", "name": "structure.json", "type": "file" },
+    { "id": "vite.config.js", "name": "vite.config.js", "type": "file" }
+  ]
+}
