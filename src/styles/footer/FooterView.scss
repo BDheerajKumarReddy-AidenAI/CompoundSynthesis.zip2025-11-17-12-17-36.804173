@@ -1,0 +1,34 @@
+.footerview {
+    background: linear-gradient(90deg, #ffffff 0%, #e0e7ff 100%);
+    border-top: 1px solid #e2e8f0;
+    border-left: none;
+    color: #1e293b;
+    padding: 12px 24px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer__text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b7280;
+    padding: 0 0 0 16px;
+    line-height: 1.4;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.footerview .x-btn.footerbutton:hover {
+    background: linear-gradient(90deg, #e0e7ff 0%, #c7d2fe 100%) !important;
+    color: #4f46e5 !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footerview .x-btn.footerbutton .x-fa {
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footerview .x-btn.footerbutton:hover .x-fa {
+    transform: rotate(10deg);
+    color: #ec4899;
+}
