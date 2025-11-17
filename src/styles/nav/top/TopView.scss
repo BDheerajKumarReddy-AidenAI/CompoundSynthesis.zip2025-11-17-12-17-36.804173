@@ -1,0 +1,49 @@
+.topview {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    border-bottom: 1px solid #e2e8f0;
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    &.x-vbox {
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .topview-logo {
+        object-fit: contain;
+        width: 160px;
+        transition: all 0.3s ease-in-out;
+        max-height: 100%;
+    }
+
+    .topview-button {
+        background: transparent;
+        border: none;
+        color: #4b5563;
+        font-size: 16px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+        .x-fa {
+            font-size: 20px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        &:hover {
+            background: linear-gradient(90deg, #e0e7ff 0%, #c7d2fe 100%);
+            color: #4f46e5;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+            .x-fa {
+                transform: rotate(10deg) scale(1.15);
+                color: #ec4899;
+            }
+        }
+    }
+}
