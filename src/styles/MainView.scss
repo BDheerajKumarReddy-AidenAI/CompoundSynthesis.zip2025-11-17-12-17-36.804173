@@ -1,0 +1,63 @@
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Refine welcome text */
+.welcome-text h2 {
+    font-size: 24px;
+    color: #1e293b;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 8px;
+}
+.welcome-text p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 16px;
+    color: #64748b;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Icon inside card */
+.card-content .icon {
+    font-size: 36px;
+    color: #4f46e5;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.card-content:hover .icon {
+    transform: scale(1.1);
+    color: #ec4899;
+}
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #1e293b;
+    font-family: 'Inter', sans-serif;
+}
+.card-content p {
+    font-size: 14px;
+    color: #475569;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Override Ext default padding */
+.x-panel-body {
+    background: transparent;
+    padding: 0;
+}
+
+/* Action buttons */
+.action-btn i,
+.soft-btn i {
+    margin-right: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-card {
+        width: 100%;
+    }
+}
